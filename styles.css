@@ -1,20 +1,18 @@
-/* General Styles for all pages */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Back Button Style */
 .back-button {
     position: fixed;
     top: 10px;
     left: 10px;
-    background-color: rgba(0, 26, 0, 0.8); /* Semi-transparent dark box */
+    background-color: rgba(0, 26, 0, 0.8);
     padding: 10px 20px;
     border-radius: 5px;
-    z-index: 9999; /* Make sure it's always on top */
-    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5); /* Neon green glow */
+    z-index: 9999; 
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5); 
 }
 
 .back-button a {
@@ -32,15 +30,14 @@ body {
     color: black;
 }
 
-/* About Me Box */
 .about-me-box {
     display: flex;
     align-items: flex-start;
-    background-color: rgba(0, 26, 0, 0.8); /* Semi-transparent dark box */
+    background-color: rgba(0, 26, 0, 0.8); 
     padding: 20px;
     border-radius: 10px;
-    width: 60%; /* Takes up 60% of the page */
-    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5); /* Neon green glow */
+    width: 60%; 
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5); 
 }
 
 .about-me-box img {
@@ -54,7 +51,7 @@ body {
     color: white;
 }
 
-/* Navigation Buttons Box */
+
 .nav-buttons-box {
     display: flex;
     flex-direction: column;
@@ -82,8 +79,6 @@ body {
     color: black;
 }
 
-
-/* Styles for index.html (About Me Page) */
 .about-page {
     background-image: url('images/background.jpg');
     background-size: cover;
@@ -115,8 +110,6 @@ body {
     margin-left: auto;
 }
 
-
-/* Styles for hobbies.html */
 .hobbies-page {
     background-image: url('images/background.jpg');
     background-size: cover;
@@ -134,7 +127,7 @@ body {
     margin-bottom: 30px;
     border: 2px solid #00ff00;
     padding: 15px;
-    background-color: rgba(0, 26, 0, 0.8); /* Dark semi-transparent background */
+    background-color: rgba(0, 26, 0, 0.8); 
     border-radius: 10px;
 }
 
@@ -159,7 +152,6 @@ body {
     color: #fff;
 }
 
-/* Styles for gallery.html */
 .gallery-page {
     background-image: url('images/background.jpg');
     background-size: cover;
@@ -188,7 +180,7 @@ body {
 }
 
 footer {
-    text-align: center;
+    text-align: left;
     padding: 10px;
     background-color: rgba(0, 26, 0, 0.8);
     color: white;
@@ -207,7 +199,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: rgba(0, 26, 0, 0.8); /* Semi-transparent dark box */
+    background-color: rgba(0, 26, 0, 0.8); 
     padding: 20px;
     border-radius: 10px;
 }
