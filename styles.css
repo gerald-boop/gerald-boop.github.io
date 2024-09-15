@@ -193,7 +193,11 @@ footer {
     background-color: rgba(0, 26, 0, 0.8);
     color: white;
     border-top: 2px solid #00ff00;
-    margin-top: auto; /* Ensures footer stays at the bottom */
+    margin-top: auto;
+}
+
+.d-flex {
+    display: flex;
 }
 
 .nav-buttons {
