@@ -59,11 +59,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: rgba(0, 26, 0, 0.8); /* Semi-transparent dark box */
+    background-color: rgba(0, 26, 0, 0.8); 
     padding: 20px;
     border-radius: 10px;
-    width: 30%; /* Takes up 30% of the page */
-    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5); /* Neon green glow */
+    width: 30%; 
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5);
 }
 
 .nav-buttons-box a {
@@ -164,17 +164,36 @@ body {
     background-image: url('images/background.jpg');
     background-size: cover;
     background-position: center;
+    
 }
 
-.gallery-entry {
-    margin: 20px 0;
+.gallery-page header {
+    text-align: center;
+    color: #00ff00;
 }
 
-.gallery-entry img {
-    max-width: 80%;
-    height: auto;
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery-grid img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
     border: 2px solid #00ff00;
     border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 26, 0, 0.8);
+    color: white;
+    border-top: 2px solid #00ff00;
+    margin-top: auto; /* Ensures footer stays at the bottom */
 }
 
 .nav-buttons {
