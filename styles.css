@@ -1,59 +1,190 @@
-/* General Styles */
+/* General Styles for all pages */
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url("C:\Users\g\Desktop\personal website\images"); /* Set the background image */
-    background-size: cover; /* Ensures the background covers the entire page */
-    background-position: center; /* Centers the background */
-    background-repeat: no-repeat; /* Prevents the background from repeating */
-    color: #fff; /* White text for readability */
     margin: 0;
     padding: 0;
+}
+
+/* Back Button Style */
+.back-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 26, 0, 0.8); /* Semi-transparent dark box */
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 9999; /* Make sure it's always on top */
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5); /* Neon green glow */
+}
+
+.back-button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #00ff00;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button a:hover {
+    background-color: #00ff00;
+    color: black;
+}
+
+/* About Me Box */
+.about-me-box {
+    display: flex;
+    align-items: flex-start;
+    background-color: rgba(0, 26, 0, 0.8); /* Semi-transparent dark box */
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%; /* Takes up 60% of the page */
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5); /* Neon green glow */
+}
+
+.about-me-box img {
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.about-info {
+    max-width: 600px;
+    color: white;
+}
+
+/* Navigation Buttons Box */
+.nav-buttons-box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    position: relative;
-}
-
-/* Header and Footer */
-header, footer {
-    text-align: center;
-    padding: 10px;
-    background-color: rgba(0, 26, 0, 0.8); /* Dark background with some transparency */
-    border-bottom: 2px solid #00ff00;
-}
-
-header h1, footer p {
-    margin: 0;
-    color: #fff; /* White text */
-}
-
-/* Section styles */
-section {
-    margin: 20px;
+    gap: 10px;
+    background-color: rgba(0, 26, 0, 0.8); /* Semi-transparent dark box */
     padding: 20px;
-    border: 2px solid #00ff00;
-    border-radius: 15px;
-    max-width: 800px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.6); /* Transparent background for readability */
+    border-radius: 10px;
+    width: 30%; /* Takes up 30% of the page */
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5); /* Neon green glow */
 }
 
-/* Button styles */
-button {
-    background-color: transparent;
-    color: #fff; /* White text */
-    border: 2px solid #00ff00;
+.nav-buttons-box a {
+    text-decoration: none;
     padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    background-color: transparent;
+    border: 2px solid #00ff00;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-button:hover {
-    color: #000;
+.nav-buttons-box a:hover {
     background-color: #00ff00;
+    color: black;
+}
+
+
+/* Styles for index.html (About Me Page) */
+.about-page {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.about-info {
+    max-width: 600px;
+    color: white;
+    margin-left: 20px;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: auto;
+}
+
+
+/* Styles for hobbies.html */
+.hobbies-page {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hobbies-page header {
+    text-align: center;
+    color: #00ff00;
+}
+
+.hobbies-page .hobby-entry {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    border: 2px solid #00ff00;
+    padding: 15px;
+    background-color: rgba(0, 26, 0, 0.8); /* Dark semi-transparent background */
+    border-radius: 10px;
+}
+
+.hobbies-page .hobby-entry img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.hobbies-page .hobby-info {
+    max-width: 600px;
+}
+
+.hobbies-page .hobby-info h2 {
+    margin: 0;
+    color: #00ff00;
+}
+
+.hobbies-page .hobby-info p {
+    margin: 5px 0 0;
+    color: #fff;
+}
+
+/* Styles for gallery.html */
+.gallery-page {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-entry {
+    margin: 20px 0;
+}
+
+.gallery-entry img {
+    max-width: 80%;
+    height: auto;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+}
+
+.nav-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 26, 0, 0.8); /* Semi-transparent dark box */
+    padding: 20px;
+    border-radius: 10px;
 }
